@@ -1,7 +1,6 @@
 {
 	"compilerOptions": {
-		"jsx": "preserve",
-		"jsxImportSource": "solid-js",
+		"jsx": "react-jsx",
 		"moduleResolution": "Bundler",
 		"module": "ESNext",
 		"target": "ES2022",

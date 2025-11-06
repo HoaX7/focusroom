@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "InterDisplay Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("InterDisplay Regular"), url("./InterDisplay/InterDisplay-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "InterDisplay Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("InterDisplay Black"), url("./InterDisplay/InterDisplay-Black.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "InterDisplay Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("InterDisplay Bold"), url("./InterDisplay/InterDisplay-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "InterDisplay ExtraLight";
+  font-style: normal;
+  font-weight: normal;
+  src: local("InterDisplay ExtraLight"), url("./InterDisplay/InterDisplay-ExtraLight.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "InterDisplay ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("InterDisplay ExtraBold"), url("./InterDisplay/InterDisplay-ExtraBold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "InterDisplay Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("InterDisplay Light"), url("./InterDisplay/InterDisplay-Light.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "InterDisplay Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("InterDisplay Medium"), url("./InterDisplay/InterDisplay-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "InterDisplay SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("InterDisplay SemiBold"), url("./InterDisplay/InterDisplay-SemiBold.ttf");
+  font-display: swap;
+}

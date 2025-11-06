@@ -1,23 +1,17 @@
 /// <reference types="vite/client" />
 
-import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/solid-router";
-import type * as Solid from "solid-js";
+import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
+import type { ReactNode } from "react";
+import { Toaster } from "@/components/ui/sonner";
+import { seo } from "@/lib/seo";
 import appCss from "@/styles/app.css?url";
 
 export const Route = createRootRoute({
   head: () => ({
-    meta: [
-      {
-        charSet: "utf-8",
-      },
-      {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1",
-      },
-      {
-        title: "TanStack Start Starter",
-      },
-    ],
+    meta: seo({
+      title: "Focus Room",
+      description: "Vibe, lock-in and start building your freedom daily",
+    }),
     links: [
       {
         rel: "stylesheet",
@@ -26,7 +20,6 @@ export const Route = createRootRoute({
     ],
   }),
   component: RootComponent,
-  notFoundComponent: () => <div>404 Not Found</div>,
 });
 
 function RootComponent() {
@@ -37,12 +30,19 @@ function RootComponent() {
   );
 }
 
-function RootDocument({ children }: Readonly<{ children: Solid.JSX.Element }>) {
+function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <>
-      <HeadContent />
-      {children}
-      <Scripts />
-    </>
+    <html lang="en">
+      <head>
+        <HeadContent />
+      </head>
+      <body>
+        {children}
+        <Scripts />
+        <Toaster />
+        {/** biome-ignore lint/correctness/useUniqueElementIds: pass */}
+        <div id="modal-root" />
+      </body>
+    </html>
   );
 }
